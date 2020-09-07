@@ -1,0 +1,19 @@
+<!--@subject Update order email @-->
+
+{{template config_path="design/email/header_template"}}
+
+
+<table>
+    <tr class="email-intro">
+        <td>
+            <p class="greeting">Hello, <strong>{{var customer_name}}</strong></p>
+            <p>Your email <strong>{{var old_email}}</strong> in order {{var order_id}} has been updated to a new email 
+                <strong>{{var new_email}}</strong>
+            </p>
+            <p><i>Thank you</i></p>
+        </td>
+    </tr>
+</table>
+
+
+{{template config_path="design/email/footer_template"}}

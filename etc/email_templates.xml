@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="emailsection_customer_create_customer_create_email"
+              label="New Customer from Guest"
+              file="new_account_guest.html"
+              type="html"
+              module="Joana_UpdateEmail"
+              area="frontend"/>
+
+    <template id="emailsection_email_settings_customer_email_changed"
+              label="Order Email Update"
+              file="order_update_guest.html"
+              type="html"
+              module="Joana_UpdateEmail"
+              area="frontend"/>
+</config>

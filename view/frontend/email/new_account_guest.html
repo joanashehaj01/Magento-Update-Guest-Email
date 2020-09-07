@@ -1,0 +1,33 @@
+<!--@subject New Customer Account from Admin @-->
+
+{{template config_path="design/email/header_template"}}
+
+
+<h1>Hello, {{var customer_name}}</h1>
+<p>
+   We have created a new account from Admin. To sign in to our site, use these credentials:
+</p>
+<ul>
+    <li><strong>{{trans "Email:"}}</strong> {{var email}}</li>
+    <li><strong>{{trans "Firstname:"}}</strong> <em>{{var firstname}}</em></li>
+     <li><strong>{{trans "Lastname:"}}</strong> <em>{{var lastname}}</em></li>
+</ul>
+<p>
+    {{trans
+    'Reset your account password? Click <a href="%reset_url">here</a> to reset it.'
+
+    reset_url="$this.getUrl($store,'customer/account/createPassword/',[_query:[id:$customer.id,token:$customer.rp_token],_nosid:1])"
+    |raw}}
+</p>
+
+<h3><i>Thank you</i></h3>
+{{template config_path="design/email/footer_template"}}
+
+
+
+
+
+
+
+
+

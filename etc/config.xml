@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <emailsection>
+            <email_settings>
+                 <customer_email_changed>emailsection_email_settings_customer_email_changed</customer_email_changed>
+            </email_settings>
+    		<customer_create>
+    			<enable>1</enable>
+    			<customer_create_email>emailsection_customer_create_customer_create_email</customer_create_email>
+    		</customer_create>
+        </emailsection>
+    </default>
+</config>
